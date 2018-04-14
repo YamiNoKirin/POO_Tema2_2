@@ -1,0 +1,19 @@
+Size of stack is 5. Elements: 2+i3 5+i4 8.2+i5.6 4.3+i0 2+i6.5 
+
+Checking top and pop for stack:
+2+i6.5 4.3+i0 8.2+i5.6 5+i4 2+i3 
+
+Size of stack is 1. Elements: 100+i100 
+
+s1 == s1 returns true
+
+Size of queue is 5. Elements: 2+i3 5+i4 8.2+i5.6 4.3+i0 2+i6.5 
+
+q2 and q1 after q1 = q2:
+Size of queue is 2. Elements: 5.3+i0 32.2+i14 
+Size of queue is 2. Elements: 5.3+i0 32.2+i14 
+
+q1 == q2 returns true
+
+Size of queue is 2. Elements: 5.3+i0 32.2+i14 
+5.3+i0 32.2+i14 

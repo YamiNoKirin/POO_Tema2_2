@@ -75,8 +75,8 @@ public:
 };
 
 int main() {
-    stack <complex> s1;
-    stack <complex> s2;
+    util::stack<complex> s1;
+    util::stack<complex> s2;
 
     //stack ">>" and "<<"
     fin >> s1;
@@ -98,8 +98,8 @@ int main() {
     //stack "=="
     fout << std::boolalpha << "s1 == s1 returns " << (s1 == s1) << "\n\n";
 
-    queue <complex> q1;
-    queue <complex> q2;
+    util::queue <complex> q1;
+    util::queue <complex> q2;
 
     fin >> q1;
     fout << q1 << "\n\n";
