@@ -1,8 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <cassert>
 #include "stack.h"
 #include "queue.h"
+#include "vector_iterator.h"
 
 std::ifstream fin("test.in");
 std::ofstream fout("test.out");
@@ -82,6 +84,13 @@ int main() {
     fin >> s1;
     fout << s1 << "\n\n";
 
+    //iterator
+    util::stack<complex>::iterator it = s1.begin();
+
+    for (auto it = s1.begin(); it != s1.end(); ++it) {
+        std::cout << *it << '\n';
+    }
+
     //stack "top()" and "pop()"
     fout << "Checking top and pop for stack:\n";
     while (!s1.empty()) {
@@ -136,6 +145,5 @@ int main() {
         }
     }
     std::cout << '\n';
-
     return 0;
 }

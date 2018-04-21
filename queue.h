@@ -7,6 +7,7 @@
 
 #include "stack.h"
 #include <stdexcept>
+#include <iostream>
 
 namespace util {
 //Does not inherit from vector or stack because it's easier to implement a queue as 2 stacks rather than a vector.

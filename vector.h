@@ -14,14 +14,17 @@ namespace util {
         return (a < b) ? a : b;
     }
 
-
     template<typename T>
     inline T max(const T &a, const T &b) {
         return (a < b) ? b : a;
     }
 
     template <typename T>
+    class iterator;
+
+    template <typename T>
     class vector {
+        friend class iterator<T>;
     private:
         T *vect;
         int _size;
@@ -95,6 +98,8 @@ namespace util {
         }
 
     public:
+        typedef iterator<T> iterator;
+
         virtual void pop() = 0;
 
         virtual void add(T x) = 0;
@@ -128,6 +133,13 @@ namespace util {
             _size = newSize;
         }
 
+        inline iterator begin() const {
+            return iterator(*this, vect);
+        }
+
+        inline iterator end() const {
+            return iterator(*this, vect + _size);
+        }
     protected:
         vector() {
             vect = new T[1]();
@@ -146,14 +158,6 @@ namespace util {
 
         virtual ~vector() {
             delete[] vect;
-        }
-
-        inline T *begin() const {
-            return vect;
-        }
-
-        inline T *end() const {
-            return vect + _size;
         }
 
         inline void push_back(const T &info) {
@@ -251,7 +255,7 @@ namespace util {
         bool operator < (const vector &other) const {
         return _size < other._size;
     }
-};
+    };
 
 }
 #endif //POO_TEMA2_2_VECTOR_H

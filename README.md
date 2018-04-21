@@ -19,7 +19,7 @@ Cerinte comune tuturor temelor:
 
     - DONE: supraincarcarea operatorului ==, a lui !=, si a lui < (pentru a putea compara 2 obiecte si a putea sorta un vector de obiecte folosind functia sort)
 
-    - Template DONE: Pentru 1p in plus folositi template-uri. Pentru alt punct in plus folositi, cu sens, un design pattern singleton, iterator, observer, factory, etc. (https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
+    - DONE (iterator): Pentru 1p in plus folositi template-uri. Pentru alt punct in plus folositi, cu sens, un design pattern singleton, iterator, observer, factory, etc. (https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns)
 	
     - DONE: toate clase vor conține obligatoriu constructori de inițializare, parametrizati și de copiere, destructor, iar operatorii >>,<<,= să fie supraincarcati.
 	
