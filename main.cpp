@@ -102,7 +102,8 @@ int main() {
     //stack "="
     s2.add(complex(100, 100));
     s1=s2;
-    fout << s1 << "\n\n";
+//    fout << s1 << "\n\n";
+    s1.print(fout);
 
     //stack "=="
     fout << std::boolalpha << "s1 == s1 returns " << (s1 == s1) << "\n\n";

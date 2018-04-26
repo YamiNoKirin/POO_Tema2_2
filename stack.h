@@ -51,6 +51,17 @@ namespace util {
 
         ~stack() {}
 
+        std::ostream &print(std::ostream &os) override {
+//            return os << *this;
+            os << "Size of stack is " << vector<T>::size() << ". Elements: ";
+            for (int i = 0; i < vector<T>::size(); ++i) {
+                os << (*this)[i] << ' ';
+            }
+            os << '\n';
+
+            return os;
+        }
+
         virtual void add(T x) {
             vector<T>::push_back(x);
         }

@@ -1,6 +1,8 @@
 # POO_Tema2_2
 A doua tema la laboratorul de POO, tema 16 din lista (vectori de numere complexe)
 
+Modificari: stack.h (54), vector.h (144), main.cpp(106)
+
 Necessary files to compile and run: /main.cpp, , /vector.h
 
 Sample input and output: /cmake-build-debug/test.in, /cmake-build-debug/test.out

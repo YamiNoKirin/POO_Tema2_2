@@ -141,6 +141,8 @@ namespace util {
             return iterator(*this, vect + _size);
         }
     protected:
+        virtual std::ostream &print(std::ostream &os) = 0;
+
         vector() {
             vect = new T[1]();
             _size = 0;
